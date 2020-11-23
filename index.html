@@ -15,7 +15,7 @@
   <title>marginz</title>
 
   <!-- LINK TAGS -->
-  <link rel="icon" type="image/png" href="./images/home_page/favicon.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./images/application/favicon.png" sizes="16x16">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -30,17 +30,39 @@
 
       <!-- BRAND IMAGE -->
       <div class="brand-logo">
-        
+        <a href="" class="brand-logo-link">
+          <img src="./images/application/marginz_logo.png" alt="marginz logo" class="brand-img">
+        </a>
       </div>
 
       <!-- NAVBAR MENU -->
-      <div class="brand-logo">
-        
+      <div id="nav-menu" class="menu">
+        <ul >
+          <a  class="close-btn" href="javascript:void(0)" onclick="closeMenu()">
+            <i>&times</i>
+          </a>
+          <a class= "nav-menu" href="">
+            <li class="nav-link">Babies</li>
+          </a>
+          <a class= "nav-menu" href="">
+            <li class="nav-link">Toddlers</li>
+          </a>
+          <a class= "nav-menu" href="">
+            <li class="nav-link">Boys</li>
+          </a>
+          <a class= "nav-menu" href="">
+            <li class="nav-link">Girls</li>
+          </a>
+          <a class= "nav-menu" href="">
+            <li class="nav-link">Cosmetics</li>
+          </a>  
+        </ul>
       </div>
 
       <!-- SEARCH BAR -->
       <div class="brand-logo">
-        
+        <input id="search-bar" type="text" name="search" placeholder="I would like to buy..." onfocus="extendSearch()"> 
+        <button id="search-button"><i class="material-icons">search</i></button>
       </div>
     </nav>
   </header>
