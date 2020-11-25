@@ -47,11 +47,14 @@ body {
   height: 3.5em;
 }
 
+
+/* BRAND LOGO */
 .brand-img {
   height: 2em;
   flex:  1 1 auto;
 }
 
+/* NAV MENU */
 #nav-menu {
   flex: 1 1 auto;
   padding: 0 3% 0 3%;
@@ -78,6 +81,7 @@ body {
   font-size: 1.25em;
 }
 
+/* SEARCH BAR */
 #search {
   box-shadow: 3px 3px 5px #a4a4a4 ;
   height: 2em;
