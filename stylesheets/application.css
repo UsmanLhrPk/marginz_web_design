@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Questrial', 'Calibri', sans-serif;
+  font-family: 'Poppins', 'Calibri', sans-serif;
   font-size: 1em;
   color: black;
   margin: 0;
@@ -47,6 +47,19 @@ body {
   height: 3.5em;
 }
 
+/* MENU CLOSE BUTTON */
+#nav-menu {
+  color: #444;
+  font-family: Poppins, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+#nav-menu .close-btn i {
+  font-family: 'Calibri';
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 100;
+}
 
 /* BRAND LOGO */
 .brand-img {
@@ -55,11 +68,6 @@ body {
 }
 
 /* NAV MENU */
-#nav-menu {
-  flex: 1 1 auto;
-  padding: 0 3% 0 3%;
-}
-
 .no-style {
   list-style-type: none;
 }
@@ -78,27 +86,32 @@ body {
 }
 
 .nav-link {
-  font-size: 1.25em;
+  font-size: 1.125em;
+  letter-spacing: 1px;
 }
 
 /* SEARCH BAR */
 #search {
-  box-shadow: 3px 3px 5px #a4a4a4 ;
+  box-shadow: 0px 1px 4px 1px #a4a4a4 ;
   height: 2em;
+  border-radius: 5px;
 }
 
 #search-bar {
-  border: none;
   border-radius: 5px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   flex: 1 1 auto;
+  width: 10em;
+  border: 3px solid white;
+  border-right: none;
+  border-left: none;
+  transition: width 0.2s;
+  padding: 0 0.5em;
+
 }
 
 #search-bar:focus {
-  position: relative;
-  width: 250px;
-  transition: width 0.2s;
   outline: none;
   border-bottom: 3px solid var(--brand-pink);
 }
@@ -116,3 +129,118 @@ body {
 #search-button:hover {
   background-color: #949494;
 }
+
+/* DESKTOPS AND LAPTOPS */
+@media screen and (min-width: 992px) {
+  /* MENU BUTTON */
+  #menu-button {
+    display: none;
+  }
+  
+  /* NAV MENU */
+  #nav-menu {
+    display: block;
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 10% 0 10%;
+  }
+
+  #nav-menu ul {
+    margin-top: 1em;
+  }
+
+  #close-btn {
+    visibility: hidden;
+    position: absolute;
+    right: 1em;
+    top: 0;
+    line-height: 1.5em;
+  }
+
+  .flex-lg-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #search-bar:focus {
+    width: 15em;
+    transition: width 0.2s;
+  }
+}
+
+/* TABLETS */
+@media screen and (max-width: 991px) {
+  /* NAV MENU */
+  .flex-md-col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #menu-button {
+    display: block;
+    position: absolute; 
+  }
+
+  #menu-button button {
+    background-color: inherit;
+    border: 1px solid #ccc;
+  }
+
+  .brand-logo {
+    margin: auto;
+  }
+
+  #nav-menu {
+    position: absolute;
+    top: 0;
+    left: 0em;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    background-color: white;
+    width: 0;
+    transition: width 0.3s;
+  }
+
+  .open-menu {
+    width: 12em !important;
+    transition: width 0.3s;
+  }
+
+  #nav-menu ul {
+    margin-top: 4em;
+    overflow-y: scroll;
+  }
+
+  #close-btn {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    line-height: 1.5em;
+  }
+
+  #nav-menu .nav-link {
+    font-size: 1rem;
+    line-height: 1em;
+    padding: 1.1em 14px;
+    border-bottom:1px solid #ccc;
+    border-color: #ccc;
+  }
+
+  #nav-menu .first-child {
+    border-top:1px solid #ccc;
+  }
+
+  #search {
+    position: absolute;
+    right: 1em;
+  }
+
+  #search-bar:focus {
+    width: 15em;
+    transition: width 0.2s;
+  }
+}
+
+

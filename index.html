@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- META TAGS FOR SEO AND PAGE DESCRIPTION -->
+  <!-- META TAGS FOR SEO AND PAGE DESCRIP  TION -->
   <meta name="application-name" content="marginz">
   <meta name="keywords" content="Babies clothes, Boys clothes, Girls clothes, Toddlers clohtes, New Born clohtes, Kids clothes, imported kids clothes, latest kids clothes designs, one year old clothes, two year old clothes, three years old clothes, four years old clothes, five years old clohtes, six years odl clothes">
   <meta name="author" content="Usman Javaid">
@@ -18,12 +18,11 @@
   <link rel="stylesheet" href="./stylesheets/application.css">
   <link rel="icon" type="image/png" href="./images/application/favicon.png" sizes="16x16">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-  <!-- SCRIPT TAGS -->
-  <script src="script.js"></script>
   
 </head>
 <body>
@@ -32,21 +31,27 @@
   <header>
     <nav id="navbar" class="container-fluid flex-row align-center spread-contents navbar-pink">
 
+      <!-- MENU BUTTOn -->
+      <div id="menu-button" class="no-decoration no-style">
+        <button class="menu-button" href="" onclick="openMenu();"><i class="material-icons">menu</i></button>
+      </div>
+
       <!-- BRAND IMAGE -->
       <div class="brand-logo">
-        <a href="" class="brand-logo-link">
-          <img src="./images/application/marginz_logo.png" alt="marginz logo" class="brand-img">
+        <a href="/" class="brand-logo-link">
+          <img src="./images/application/marginz_logo.png" alt="marginz logo" class="brand-img" />
         </a>
       </div>
 
       <!-- NAVBAR MENU -->
       <div id="nav-menu" class="menu">
-        <ul class="flex-row spread-contents no-decoration no-style no-list-padding">
-<!--           <a  class="close-btn" href="javascript:void(0)" onclick="closeMenu()">
-            <i>&times</i>
-          </a> -->
+          
+        <ul class="flex-lg-row flex-md-col spread-contents no-decoration no-style no-list-padding">
+          <a id="close-btn" class="close-btn" href="javascript:void(0)" onclick="closeMenu();">
+             <i>&times</i>
+          </a>
           <a class= "nav-menu" href="">
-            <li class="no-decoration nav-link">Babies</li>
+            <li class="no-decoration nav-link first-child">Babies</li>
           </a>
           <a class= "nav-menu" href="">
             <li class="no-decoration nav-link">Toddlers</li>
@@ -70,5 +75,8 @@
       </div>
     </nav>
   </header>
+
+  <!-- SCRIPT TAGS -->
+  <script src="scripts/script.js"></script>
 </body>
 </html>
