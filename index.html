@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!-- SCRIPT TAGS -->
   <script src="scripts/script.js"></script>
@@ -52,29 +53,29 @@
                <i>&times</i>
             </a>
             <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Babies</li>
+              <li class="no-decoration nav-link">Baby Boy</li>
             </a>
             <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Toddlers</li>
+              <li class="no-decoration nav-link">Baby Girl</li>
             </a>
             <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Boys</li>
-            </a>
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Girls</li>
-            </a>
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Cosmetics</li>
+              <li class="no-decoration nav-link">Toddler Boy</li>
             </a>   
             <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Cosmetics</li>
+              <li class="no-decoration nav-link">Toddler Girl</li>
             </a>   
+            <a class= "nav-menu" href="">
+              <li class="no-decoration nav-link">Boy</li>
+            </a>
+            <a class= "nav-menu" href="">
+              <li class="no-decoration nav-link">Girl</li>
+            </a>
           </ul>
         </div>     
       </div>
 
       <!-- SEARCH BAR -->
-      <div id="search" class="search flex-row">
+      <div id="search" class="search flex-row shadow">
         <input id="search-bar" type="text" name="search" placeholder="I would like to buy..."> 
         <button id="search-button"><i class="material-icons">search</i></button>
         <button id="close-button" onclick="closeSearch();"><i class="material-icons">close</i></button>
@@ -88,80 +89,93 @@
   </header>
 
   <!-- MAIN BODY -->
-  <div class="jumbutron">
-    Hello
-  </div>
+  <main class="container-fluid">
+    <div class="container">
+      <!-- JUNBUTRON -->
+      <div class="shadow jumbutron">
+        <img src="\images\home_page\jumbutron.jpg" alt="">
+      </div>
+
+      <!-- ITEM TILES -->
+      <h1 class="text-center brand-blue">New Arrivals</h1>
+      <div class="flex-row margin-top auto-side-margin">
+        <div class="item-tile col-lg-5 col-md-3 col-sm-2 col-xs-1 shadow">
+          <div class="item-img">
+            <a href="">
+              <img src=".\images\home_page\dress.jpg" alt="Product Image">
+            </a>
+          </div>
+          <div class="item-info">
+            <small>marginz | Girl</small>
+            <p class="item-description no-margin">Tommy Hilfiger Dress Girls</p>
+            <h4 class="item-price">Rs. 1850/-</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- FOOTER -->
   <footer>
-    <div class="container-fluid footer-gray">
+    <div class="container-fluid footer-gray shadow">
       <div class="flex-lg-row flex-md-row flex-sm-col align-start spread-contents container">
-        <div id="links" class="col-lg-3 col-md-3 col-sm-1">
-          <h3 class="no-heading-margin">
-            General Links  
+        <div id="customer-service" class="col-lg-3 col-md-3 col-sm-1">
+          <h3 class="no-margin bold uppercase">
+            Customer Service
           </h3>
-          <ul class="links no-style no-list-padding">
-            <a href="">
-              <li>Link 1</li>
+          <ul class="links no-style no-list-padding no-margin">
+            <a class="footer-link" href="">
+              <li>Shopping</li>
             </a>
-            <a href="">
-              <li>Link 2</li>
+            <a class="footer-link" href="">
+              <li>Returns</li>
             </a>
-            <a href="">
-              <li>Link 3</li>
+            <a class="footer-link" href="">
+              <li>Orders</li>
             </a>
-            <a href="">
-              <li>Link 4</li>
+            <a class="footer-link" href="">
+              <li>My Account</li>
             </a>
-            <a href="">
-              <li>Link 5</li>
+            <a class="footer-link" href="">
+              <li>Size Chart</li>
+            </a>
+            <a class="footer-link" href="">
+              <li>Customer Service</li>
+            </a>
+            <a class="footer-link" href="">
+              <li>Email Us</li>
             </a>
           </ul>
         </div>
 
-        <div id="more-links" class="col-lg-3 col-md-3 col-sm-1">
-          <h3 class="no-heading-margin">
-            More Links  
+        <div id="about" class="col-lg-3 col-md-3 col-sm-1">
+          <h3 class="no-margin bold uppercase">
+            About Us
           </h3>
-          <ul class="links no-style no-list-padding">
-            <a href="">
-              <li>Link 1</li>
-            </a>
-            <a href="">
-              <li>Link 2</li>
-            </a>
-            <a href="">
-              <li>Link 3</li>
-            </a>
-            <a href="">
-              <li>Link 4</li>
-            </a>
-            <a href="">
-              <li>Link 5</li>
+          <ul class="links no-style no-list-padding no-margin">
+            <a class="footer-link" href="">
+              <li>marginz Inc.</li>
             </a>
           </ul>
         </div>
 
-        <div id="contact-links" class="col-lg-3 col-md-3 col-sm-1">
-          <h3 class="no-heading-margin">
-            More Links  
+        <div id="stay-in-touch" class="col-lg-3 col-md-3 col-sm-1">
+          <h3 class="no-margin bold uppercase">
+            Stay In Touch 
           </h3>
-          <ul class="links no-style no-list-padding">
-            <a href="">
-              <li>Link 1</li>
-            </a>
-            <a href="">
-              <li>Link 2</li>
-            </a>
-            <a href="">
-              <li>Link 3</li>
-            </a>
-            <a href="">
-              <li>Link 4</li>
-            </a>
-            <a href="">
-              <li>Link 5</li>
-            </a>
+          <ul class="links no-style no-list-padding no-margin flex-row">
+            <li>
+              <a class="footer-link social fa fa-facebook" href="">
+              </a>
+            </li>
+            <li>
+              <a class="footer-link social fa fa-twitter" href="">
+              </a>
+            </li>
+            <li>
+              <a class="footer-link social fa fa-whatsapp" href="">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
