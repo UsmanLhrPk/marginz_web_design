@@ -222,7 +222,7 @@ body {
 #search {
   height: 2rem;
   border-radius: 5px;
-  flex: 1 1.125 0rem;
+  flex: 1 2.5 7rem;
 }
 
 #search-bar {
@@ -525,7 +525,7 @@ footer div.container {
   #nav-menu {
     display: block;
     position: relative;
-    flex: 1.125 1 auto;
+    flex: 2.5 1 auto;
     padding: 0 2.5%;
   }
 
@@ -575,7 +575,7 @@ footer div.container {
     flex-direction: column;
   }
 
-  .col-md-3 {
+  .col-md-4 {
     width: 33.33333%;
   }
 
