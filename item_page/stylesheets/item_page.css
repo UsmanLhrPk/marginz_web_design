@@ -1,0 +1,41 @@
+input[type="radio"] {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+input[type="radio"] label {
+    /* font-family: soleil,sans-serif; */
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    display: inline-flex;
+    height: 56px;
+    line-height: 16px;
+    justify-content: center;
+    padding: 12px 8px;
+    font-size: 0.8125em;
+    font-style: normal;
+    font-weight: 500;
+    border: 1px solid #D6DFE1;
+    color: #545C5F;
+    text-transform: none;
+    text-align: center;
+    letter-spacing: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.item-page-size {
+  display: flex;
+flex-wrap: wrap;
+      margin: 4px 8px 4px 0;
+    max-width: 118px;
+    width: 100%;
+}

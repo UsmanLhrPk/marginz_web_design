@@ -15,6 +15,7 @@
 
   <!-- LINK TAGS -->
   <link rel="stylesheet" href="./stylesheets/application.css">
+  <link rel="stylesheet" href="./stylesheets/item_page.css">
   <link rel="icon" type="image/png" href="./images/application/favicon.png" sizes="16x16">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!-- SCRIPT TAGS -->
-  <script src="./scripts/script.js"></script>
+  <script src="scripts/script.js"></script>
 </head>
 <body>
 
@@ -95,130 +96,37 @@
   <!-- MAIN BODY -->
   <main class="container-fluid">
     <div class="container">
-      <!-- JUNBUTRON -->
-      <div class="shadow jumbutron">
-        <img src=".\images\home_page\jumbutron.jpg" alt="">
-      </div>
-      <div class="features display-sm">
-        <div class="flex-col">
-          <a class="no-decoration" href="tel:03245858566">
-            <div class="feature flex-row border-bottom-ccc purple-background">
-              <div class="feat-icon">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="feat-desc">
-                <span class="bold">Call 03245858566</span>
-              </div>
+      <div class="flex-row-lg flex-sm-col">
+        <div class="col-md-6 item-page-img">
+          <img src=".\images\home_page\dress.png" alt="Product Image">
+        </div>
+        <div class="col-md-6 item-options">
+          <div class="flex-col">
+            <div class="item--page-name">
+              <span>Tommy Hilfiger Dress Girls</span>
             </div>
-          </a>
-          <div class="feature flex-row border-bottom-ccc pink-background">
-            <div class="feat-icon">
-              <i class="fa fa-handshake"></i>
-            </div>
-            <div class="feat-desc">
-              <span class="bold">Cash on Delivery</span>
-            </div>
-          </div>
-          <div class="feature flex-row pi-background purple-background">
-            <div class="feat-icon">
-              <i class="fa fa-truck"></i>
-            </div>
-            <div class="feat-desc">
-              <span class="bold">Delivery by TCS</span>
+            <div class="item--page-price">
+              <span>Rs. 1850</span>
+            </div> 
+            <div class="item--page--actual-price">
+              <span><strike>Rs. 1850</strike></span>
+            </div>              
+            <div class="item-page-size">
+              <input id="ItemSize-xs" type="radio" name="size" value="xs">
+              <label for="ItemSize-xs">Extra Small</label>
+              <input id="ItemSize-sm" type="radio" name="size" value="sm">
+              <label for="ItemSize-sm">Small</label>
+              <input id="ItemSize-md" type="radio" name="size" value="md">
+              <label for="ItemSize-md">Medium</label>
+              <input id="ItemSize-lg" type="radio" name="size" value="lg">
+              <label for="ItemSize-lg">Large</label>
+              <input id="ItemSize-xl" type="radio" name="size" value="xl">
+              <label for="ItemSize-xl">Extra Large</label>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ITEM TILES -->
-    <h1 class="text-center brand-blue">New Arrivals</h1>
-    <div class="flex-row margin-top auto-side-margin">
-      <div class="item-tile col-lg-5 col-md-3 col-sm-2 col-xs-1 shadow">
-        <div class="item-img">
-          <a href="./item_page/index.html">
-            <img src=".\images\home_page\dress.png" alt="Product Image">
-          </a>
-        </div>
-        <div class="item-info flex-col">
-          <div class="item-description no-margin">
-            <small>marginz | Girl</small>
-            <p class="no-margin">Tommy Hilfiger Dress Girls</p>
-          </div>
-          <div class="flex-col item-price no-margin">
-            <p class="no-margin bold">Rs. 1850</p>
-            <small class="gray"><strike>Rs. 2050</strike></small>
-          </div>
-        </div>
-      </div>
-      <div class="item-tile col-lg-5 col-md-3 col-sm-2 col-xs-1 shadow">
-        <div class="item-img">
-          <a href="./item_page/index.html">
-            <img src=".\images\home_page\dress.png" alt="Product Image">
-          </a>
-        </div>
-        <div class="item-info flex-col">
-          <div class="item-description no-margin">
-            <small>marginz | Girl</small>
-            <p class="no-margin">Tommy Hilfiger Dress Girls</p>
-          </div>
-          <div class="flex-col item-price no-margin">
-            <p class="no-margin bold">Rs. 1850</p>
-            <small class="gray"><strike>Rs. 2050</strike></small>
-          </div>
-        </div>
-      </div>
-      <div class="item-tile col-lg-5 col-md-3 col-sm-2 col-xs-1 shadow">
-        <div class="item-img">
-          <a href="./item_page/index.html">
-            <img src=".\images\home_page\dress.png" alt="Product Image">
-          </a>
-        </div>
-        <div class="item-info flex-col">
-          <div class="item-description no-margin">
-            <small>marginz | Girl</small>
-            <p class="no-margin">Tommy Hilfiger Dress Girls</p>
-          </div>
-          <div class="flex-col item-price no-margin">
-            <p class="no-margin bold">Rs. 1850</p>
-            <small class="gray"><strike>Rs. 2050</strike></small>
-          </div>
-        </div>
-      </div>
-      <div class="item-tile col-lg-5 col-md-3 col-sm-2 col-xs-1 shadow">
-        <div class="item-img">
-          <a href="./item_page/index.html">
-            <img src=".\images\home_page\dress.png" alt="Product Image">
-          </a>
-        </div>
-        <div class="item-info flex-col">
-          <div class="item-description no-margin">
-            <small>marginz | Girl</small>
-            <p class="no-margin">Tommy Hilfiger Dress Girls</p>
-          </div>
-          <div class="flex-col item-price no-margin">
-            <p class="no-margin bold">Rs. 1850</p>
-            <small class="gray"><strike>Rs. 2050</strike></small>
-          </div>
-        </div>
-      </div>
-      <div class="item-tile col-lg-5 col-md-3 col-sm-2 col-xs-1 shadow">
-        <div class="item-img">
-          <a href="./item_page/index.html">
-            <img src=".\images\home_page\dress.png" alt="Product Image">
-          </a>
-        </div>
-        <div class="item-info flex-col">
-          <div class="item-description no-margin">
-            <small>marginz | Girl</small>
-            <p class="no-margin">Tommy Hilfiger Dress Girls</p>
-          </div>
-          <div class="flex-col item-price no-margin">
-            <p class="no-margin bold">Rs. 1850</p>
-            <small class="gray"><strike>Rs. 2050</strike></small>
-          </div>
-        </div>
-      </div>
     </div>
   </main>
 
