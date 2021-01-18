@@ -18,6 +18,10 @@ body {
   margin: 0;
 }
 
+[class*="flex-"] {
+  justify-content: center;
+}
+
 .red {
   color: #f00 !important;
 }
@@ -121,6 +125,11 @@ body {
 }
 
 /* NAVBAR */
+.nav-container, main, .footer-container {
+  max-width: 1400px;
+  margin: 0 auto !important ;
+}
+
 .container-fluid {
   width: 100%;
   margin: 0;
@@ -252,6 +261,7 @@ body {
   background: #b4b4b4;
   flex: 1 1 auto;
   max-width: 3rem;
+  overflow: hidden;
 }
 
 #close-button {
@@ -266,14 +276,15 @@ body {
 /* MAIN BODY */
 /* JUMBUTRON */
 .jumbutron {
-  background-color: rgb(226, 214, 226);
-  background: linear-gradient(rgb(226, 214, 226) 50%, 
-                              rgb(253, 232, 231) 50%, 
-                              rgb(253, 232, 231) 70%, 
-                              rgb(253, 243, 242) 70%, 
-                              rgb(253, 243, 242) 91%, 
-                              rgb(253, 232, 231) 91%,
-                              rgb(253, 232, 231) 100%);
+  /* background-color: rgb(226, 214, 226); */
+  /* background: linear-gradient(rgb(226, 214, 226) 50.
+  %,  */
+                              /* rgb(253, 232, 231) 50%,  */
+                              /* rgb(253, 232, 231) 70%, / */
+                              /* rgb(253, 243, 242) 70%,  */
+                              /* rgb(253, 243, 242) 91%,  */
+                              /* rgb(253, 232, 231) 91%, */
+                              /* rgb(253, 232, 231) 100%); */
 }
 
 .jumbutron img {
@@ -525,7 +536,7 @@ footer div.container {
   #nav-menu {
     display: block;
     position: relative;
-    flex: 2.5 1 auto;
+    flex: 2.25 1 auto;
     padding: 0 2.5%;
   }
 
@@ -577,6 +588,10 @@ footer div.container {
 
   .col-md-4 {
     width: 33.33333%;
+  }
+
+  .col-md-6 {
+    width: 50%;
   }
 
   /* NAV MENU */
