@@ -127,7 +127,7 @@ body {
 /* NAVBAR */
 .nav-container, main, .footer-container {
   max-width: 1400px;
-  margin: auto !important ;
+  margin: 0 auto !important ;
 }
 
 .container-fluid {
@@ -258,9 +258,10 @@ body {
   border-radius: 5px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  background: #b4b4b4;
+  background: #ddd;
   flex: 1 1 auto;
   max-width: 3rem;
+  overflow: hidden;
 }
 
 #close-button {
@@ -611,7 +612,7 @@ footer div.container {
   }
 
   #nav-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0rem;
     height: 100%;
@@ -796,6 +797,27 @@ footer div.container {
     background-color: inherit;
     border: 1px solid #ccc;
     padding: 6px;
+  }
+
+  #customer-service, #about {
+    border-bottom: 1px solid #ddd;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .margin-top-sm {
+    margin-top: 1rem !important;
+  }
+
+  .justify-center-sm {
+    justify-content: center;
+  }
+
+  .justify-center-sm li a {
+    display: flex;
+    justify-content: center;
   }
 }
 

@@ -30,4 +30,19 @@ function closeSearch () {
   logo.classList.remove("hidden"); 
   var menu = document.getElementById("menu-button");
   menu.classList.remove("hidden");
-}  
+}
+
+function incQty () {
+  var elem = document.getElementById("itemQty");
+  if (elem.value != 10) {
+    elem.value = elem.value*1 + 1;
+  };
+}
+
+function decQty () {
+  var elem = document.getElementById("itemQty");
+  if (elem.value != 0) {
+    elem.value -= 1;
+  }
+}
+

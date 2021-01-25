@@ -35,8 +35,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav id="navbar" class="container-fluid ">
-    <div class="nav-container flex-row align-center spread-contents">
+  <nav id="navbar" class="container-fluid flex-row align-center spread-contents"">
     <!-- MENU BUTTOn -->
       <div id="menu-button" class="no-decoration no-style">
         <button class="menu-button" href="" onclick="openMenu();"><i class="material-icons">menu</i></button>
@@ -89,18 +88,17 @@
       <div id="search-button-sm" class="no-decoration no-style display">
         <button class="search-button-sm" href="" onclick="openSearch();"><i class="material-icons">search</i></button>
       </div>
-    </div>
   </nav>
 
 
   <!-- MAIN BODY -->
   <main class="container-fluid">
     <div class="container">
-      <div class="flex-row-lg flex-sm-col">
-        <div class="col-md-6 item-page-img">
-          <img src=".\images\home_page\dress.png" alt="Product Image">
+      <div class="flex-row-lg flex-md-row flex-sm-col">
+        <div class="col-lg-5 col-md-6 col-sm-12 img-container">
+          <img class="item-page-product-img" src=".\images\home_page\dress.png" alt="Product Image">
         </div>
-        <div class="col-md-6 item-options">
+        <div class="col-lg-5 col-md-6 col-sm-12 item-page-options">
           <div class="flex-col">
             <div class="item-page-category text-center">
               <small>marginz | Girls</small>
@@ -150,11 +148,14 @@
               </div>
               <div class="item-page-submit-button flex-row">
                 <div class="item-page-qty-div flex-row shadow">
-                  <button class="item-page-button-less">-</button>
-                  <div class="item-page-qty">1</div>
-                  <button class="item-page-button-more">+</button>
+                  <a id="decButton" class="item-page-button-less no-decoration" href="javascript:void(0)" onclick="decQty();">-</a>
+                  <input type="number" min="0" max="10" id="itemQty" class="item-page-qty" value="0">
+                  <a class="item-page-button-more no-decoration" href="javascript:void(0)" onclick="incQty();">+</a>
                 </div>
-                <input class="item-page-submit" type="submit" value="Add to Cart"> 
+                <input id="incButton" class="item-page-submit" type="submit" value="Add to Cart"> 
+              </div>
+              <div class="free-shipping">
+                <small class="bold">Free Shipping</small><small> on orders above Rs 2000</small>
               </div>
             </form>
           </div>
@@ -198,7 +199,7 @@
         </div>
 
         <div id="about" class="col-lg-3 col-md-3 col-sm-1">
-          <h3 class="no-margin bold uppercase">
+          <h3 class="no-margin bold uppercase margin-top-sm">
             About Us
           </h3>
           <ul class="links no-style no-list-padding no-margin">
@@ -209,10 +210,10 @@
         </div>
 
         <div id="stay-in-touch" class="col-lg-3 col-md-3 col-sm-1">
-          <h3 class="no-margin bold uppercase">
+          <h3 class="no-margin bold uppercase margin-top-sm">
             Stay In Touch 
           </h3>
-          <ul class="links no-style no-list-padding no-margin flex-row">
+          <ul class="links no-style no-list-padding no-margin flex-row justify-left justify-center-sm">
             <li>
               <a class="social fa fa-facebook-square" href="https://web.facebook.com/marginz.pk/?_rdc=1&_rdr" target="blank">
               </a>
