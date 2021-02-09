@@ -35,59 +35,61 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav id="navbar" class="container-fluid flex-row align-center spread-contents"">
-    <!-- MENU BUTTOn -->
-      <div id="menu-button" class="no-decoration no-style">
-        <button class="menu-button" href="" onclick="openMenu();"><i class="material-icons">menu</i></button>
-      </div>
+  <nav id="navbar" class="container-fluid flex align-center spread-contents">
+    <div  class="nav-container flex-row align-center spread-contents">
+        <!-- MENU BUTTOn -->
+        <div id="menu-button" class="no-decoration no-style">
+          <button class="menu-button" href="" onclick="openMenu();"><i class="material-icons">menu</i></button>
+        </div>
 
-      <!-- BRAND IMAGE -->
-      <div id="brand-logo" class="brand-logo">
-        <a href="/" class="brand-logo-link">
-          <img src="./images/application/marginz_logo.png" alt="marginz logo" class="brand-img" />
-        </a>
-      </div>
+        <!-- BRAND IMAGE -->
+        <div id="brand-logo" class="brand-logo">
+          <a href="/" class="brand-logo-link">
+            <img src="./images/application/marginz_logo.png" alt="marginz logo" class="brand-img" />
+          </a>
+        </div>
 
-      <!-- NAVBAR MENU -->
-      <div id="nav-menu" class="menu">
-        <div class="menu-container">     
-          <ul class="flex-lg-row flex-md-col spread-contents no-decoration no-style no-list-padding">
-            <a id="close-btn" class="close-btn" href="javascript:void(0)" onclick="closeMenu();">
-               <i>&times</i>
-            </a>
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Baby Boy</li>
-            </a>
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Baby Girl</li>
-            </a>
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Toddler Boy</li>
-            </a>   
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Toddler Girl</li>
-            </a>   
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Boy</li>
-            </a>
-            <a class= "nav-menu" href="">
-              <li class="no-decoration nav-link">Girl</li>
-            </a>
-          </ul>
-        </div>     
-      </div>
+        <!-- NAVBAR MENU -->
+        <div id="nav-menu" class="menu">
+          <div class="menu-container">     
+            <ul class="flex-lg-row flex-md-col spread-contents no-decoration no-style no-list-padding">
+              <a id="close-btn" class="close-btn" href="javascript:void(0)" onclick="closeMenu();">
+                 <i>&times</i>
+              </a>
+              <a class= "nav-menu" href="">
+                <li class="no-decoration nav-link">Baby Boy</li>
+              </a>
+              <a class= "nav-menu" href="">
+                <li class="no-decoration nav-link">Baby Girl</li>
+              </a>
+              <a class= "nav-menu" href="">
+                <li class="no-decoration nav-link">Toddler Boy</li>
+              </a>   
+              <a class= "nav-menu" href="">
+                <li class="no-decoration nav-link">Toddler Girl</li>
+              </a>   
+              <a class= "nav-menu" href="">
+                <li class="no-decoration nav-link">Boy</li>
+              </a>
+              <a class= "nav-menu" href="">
+                <li class="no-decoration nav-link">Girl</li>
+              </a>
+            </ul>
+          </div>     
+        </div>
 
-      <!-- SEARCH BAR -->
-      <div id="search" class="search flex-row shadow">
-        <input id="search-bar" type="text" name="search" placeholder="I would like to buy..."> 
-        <button id="search-button"><i class="material-icons">search</i></button>
-        <button id="close-button" onclick="closeSearch();"><i class="material-icons">close</i></button>
-      </div>
+        <!-- SEARCH BAR -->
+        <div id="search" class="search flex-row shadow">
+          <input id="search-bar" type="text" name="search" placeholder="I would like to buy..."> 
+          <button id="search-button"><i class="material-icons">search</i></button>
+          <button id="close-button" onclick="closeSearch();"><i class="material-icons">close</i></button>
+        </div>
 
-      <!-- SEARCH BUTTON WILL ONLY APPEAR ON SMALL SCREENS -->
-      <div id="search-button-sm" class="no-decoration no-style display">
-        <button class="search-button-sm" href="" onclick="openSearch();"><i class="material-icons">search</i></button>
-      </div>
+        <!-- SEARCH BUTTON WILL ONLY APPEAR ON SMALL SCREENS -->
+        <div id="search-button-sm" class="no-decoration no-style display">
+          <button class="search-button-sm" href="" onclick="openSearch();"><i class="material-icons">search</i></button>
+        </div>
+    </div>
   </nav>
 
 

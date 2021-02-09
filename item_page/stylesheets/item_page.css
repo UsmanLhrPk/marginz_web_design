@@ -1,6 +1,11 @@
 .img-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.item-page-product-img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .item-page-options .flex-col {
